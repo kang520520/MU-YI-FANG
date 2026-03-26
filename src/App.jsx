@@ -508,7 +508,6 @@ export default function App() {
             </li>
             
           ))}
-           <button onClick={() => setIsAddModalOpen(true)} className="p-2 bg-stone-900 text-white rounded-full shadow-lg scale-110 hover:bg-amber-800 transition-all text-left"><Icons.Plus size={26}/></button>
         </ul>
         
       </div>
@@ -619,13 +618,12 @@ export default function App() {
   <a href={LINE_LINK} target="_blank" rel="noreferrer" className="w-9 h-9 rounded-xl bg-[#06C755] flex items-center justify-center text-white shadow-sm hover:scale-105 transition-all overflow-hidden shrink-0">
     {dbConfig.lineIcon ? <img src={dbConfig.lineIcon} className="w-full h-full object-cover" alt="LINE" /> : <SafeIcon name="MessageCircle" size={18} />}
   </a>
-
   
 </div>
           <div className="flex items-center gap-4 text-stone-300">
             {isAdmin ? (
                <div className="flex items-center gap-4 text-left">
-               
+               <button onClick={() => setIsAddModalOpen(true)} className="p-2 bg-stone-900 text-white rounded-full shadow-lg scale-110 hover:bg-amber-800 transition-all text-left"><Icons.Plus size={18}/></button>
                  <button onClick={handleGearClick} className="p-2 text-stone-400 hover:text-stone-900 transition-colors text-left"><Icons.Settings size={30}/></button>
                  <button onClick={handleLogout} className="p-2 text-stone-300 hover:text-red-600 transition-colors text-left"><Icons.LogOut size={30}/></button>
                </div>
